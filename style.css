@@ -14,9 +14,22 @@
 
 body
 {
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(150deg, rgba(0,47,255,1) 0%, rgba(0,255,210,1) 100%);
+    background: linear-gradient(150deg, rgba(0,47,255,1) 0%, rgba(0,255,210,1) 100%); 
+    overflow-x: hidden;
+}
+
+.container
+{
+    height: 300vh;
+    max-width: 800px;
+    margin: auto;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
 }
 
 .logom
@@ -26,6 +39,7 @@ body
     border-radius: 50%;
     object-fit: cover;
     object-position: 45% 70%;
+    margin: 10px;
 }
 
 .en
@@ -56,27 +70,49 @@ nav
     background-color: #fff;
     
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-direction: row;
+
+    position: sticky;
+    z-index: 100;
+    top: 0;
 }
 
 nav ul
 {
+    list-style-type: none;
     display: flex;
     flex-direction: row;
-    text-align: center;
+    margin-right: 10px;
 }
 
-nav ul li
+nav li a
 {
-    width: 70px;
-    list-style-type: none;
-    text-align: center;
+    margin-right: 20px;
+    color: black;
 }
 
-section
+#workNav
 {
+    padding: 5px 10px;
+    border-left: 3px solid blue;
+    border-right: 3px solid blue;
+}
 
+#aboutNav
+{
+    margin-right: 20px;
+}
 
+#contactNav
+{
+    margin-left: 0px;
+}
+
+.hero
+{
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,10 +150,139 @@ h1
     justify-content: center;
 }
 
-a
+.buttons
+{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons a:hover
+{
+    opacity: 0.5;
+    color: black;
+}
+
+.buttons a
 {
     background-color: white;
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    border-radius: 20px;
+    padding: 10px 20px;
 }
+
+a
+{
+    text-decoration: none;
+    color: blue ;
+}
+
+span
+{
+    margin: 10px;
+}
+
+.about
+{
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.rolam
+{
+    width: 800px;
+    margin-top: 200px;
+}
+
+.rolam h1
+{
+    text-indent: 20px;
+    font-weight: bold;
+}
+
+.rolam p
+{
+    color: white;
+    text-indent: 20px;
+}
+
+@media (max-width: 550px)
+{
+    .logo span span
+    {
+        font-size: 0%;
+    }
+
+    .logo span
+    {
+        font-size: small;
+    }
+
+    .hero
+    {
+        flex-direction: column;
+    }
+    .name
+    {
+        flex-direction: column;
+    }
+
+    nav ul
+    {
+        font-size: small;
+        padding: 0;
+        margin: 0;
+    }
+
+    #workNav
+    {
+        padding: 0 2px;
+        margin: 0 2px;
+    }
+
+    #aboutNav
+    {
+        margin: 0;
+    }
+
+    .me
+    {
+        flex-direction: column;
+        margin: auto auto auto auto;
+    }
+
+    .buttons
+    {
+        flex-wrap: wrap;
+    }
+
+    .en
+    {
+        height: 200px;
+        width: 200px;
+    }
+
+    .img
+    {
+        height: 205px;
+        width: 205px;
+    }
+
+    .name
+    {
+        font-size: medium;
+    }
+
+    .name
+    {
+        margin-left: 20px;
+    }
+
+
+    .rolam p
+    {
+        padding: 20px;
+    }
+}
+
