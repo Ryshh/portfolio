@@ -10,6 +10,7 @@
 
     margin: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 body
@@ -20,7 +21,7 @@ body
 
 .container
 {
-    height: 300vh;
+    height: 400vh;
     max-width: 800px;
     margin: auto;
 }
@@ -180,9 +181,10 @@ a
 span
 {
     margin: 10px;
+    color: black;
 }
 
-.about
+.section
 {
     margin-top: 300px;
     display: flex;
@@ -286,3 +288,53 @@ span
     }
 }
 
+.munkaim
+{
+    margin-top: 100px;
+}
+
+.project-container
+{
+    border: 3px white solid;
+    border-radius: 32px;
+    overflow: hidden;
+    margin-top: 32px;
+    background-color: rgb(75, 101, 170);
+}
+
+.project-layout
+{
+    display: flex;
+}
+
+.project-img
+{
+    overflow: hidden;
+    max-height: 300px;
+    max-width: 47.5%;
+    margin-right: 2.5%;
+    border-right: solid white 3px;
+}
+
+.project-img img
+{
+    height: 400px;
+    transform: translateX(-150px);
+}
+
+#img-3
+{
+    transform: translateX(-225px);
+}
+
+.project-description
+{
+    margin-top: 20px;
+    width: 47.5%;
+}
+
+.project-links
+{
+    display: flex;
+    flex-direction: column;
+}

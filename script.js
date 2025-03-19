@@ -2,7 +2,7 @@ const url = "https://raw.githubusercontent.com/Ryshh/portfolio-json/refs/heads/m
 
 function CreateProjectCard(data)
 {
-    var temakorok = ""
+    let temakorok = ""
 
     data.topics.forEach(temakor => {
         temakorok += `<li>${temakor}</li>`
@@ -11,7 +11,7 @@ function CreateProjectCard(data)
     return `<div class="project-container">
                 <div class="project-layout">
                     <div class="project-img">
-                        <img src="${data.photo_url}" alt="">
+                        <img id="img-${data.id}" src="${data.photo_url}" alt="">
                     </div>
                     <div class="project-description">
                         <h3>${data.title}</h3>
