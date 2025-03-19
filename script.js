@@ -6,12 +6,12 @@ function CreateProjectCard(data)
 
     data.topics.forEach(temakor => {
         temakorok += `<li>${temakor}</li>`
-    });
+    });  
 
     return `<div class="project-container">
                 <div class="project-layout">
                     <div class="project-img">
-                        <img id="img-${data.id}" src="${data.photo_url}" alt="">
+                        <img id="img-${data.id}" src="${data.photo-url}" alt="">
                     </div>
                     <div class="project-description">
                         <h3>${data.title}</h3>
@@ -22,8 +22,8 @@ function CreateProjectCard(data)
                         </ul>
 
                         <div class="project-links">
-                            <a href="${data.repo_link}" target="_blank" style="text-align: right;">Github link</a>
-                            <a href="${data.site_link}" target="_blank" style="text-align: right;">Weboldal</a>
+                            <a href="${data.repo-link}" target="_blank" style="text-align: right;">Github link</a>
+                            <a href="${data.site-link}" target="_blank" style="text-align: right;">Weboldal</a>
                         </div>
                     </div>
                 </div>
