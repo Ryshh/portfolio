@@ -8,12 +8,7 @@ function CreateProjectCard(data)
         temakorok += `<li>${temakor}</li>`
     });  
 
-    console.log(data.repo_link);
-    console.log(data.site_link);
-    
-    
-
-    return `<div class="project-container">
+    return `<div class="project-container" id="container-${data.id}">
                 <div class="project-layout">
                     <div class="project-img">
                         <img id="img-${data.id}" src="${data.photo_url}" alt="">
