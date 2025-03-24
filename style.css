@@ -159,7 +159,7 @@ nav li a
     margin-left: 0px;
 }
 
-.hero
+#hero
 {
     margin-top: 70px;
     display: flex;
@@ -235,6 +235,11 @@ a
 span
 {
     margin: 10px;
+    color: whitesmoke;
+}
+
+span a
+{
     color: whitesmoke;
 }
 
@@ -350,12 +355,12 @@ h3
         font-size: small;
     }
     
-    .logo span span
+    .logo span a
     {
         font-size: 0;
     }
 
-    .hero
+    #hero
     {
         flex-direction: column;
     }
